@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership | The Quiet Society</title>
+<meta name="description" content="Apply for private membership with The Quiet Society, a lifestyle concierge for Connecticut, the Tri-State area, and New England.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-name">The Quiet Society</span>
+      <span class="brand-tagline">PERSONAL CONCIERGE</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Concierge Services</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="request-concierge.html">Request Concierge</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="member-login.html" class="member-login">Member Login</a>
+      <a href="request-concierge.html" class="btn btn-outline">Request Concierge</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" style="background:none;">
+  <div class="hero-media" style="background-image:url('https://images.unsplash.com/photo-1688043364470-4235b111b8b8?w=1800&q=80&auto=format&fit=crop');"></div>
+  <div class="hero-content">
+    <span class="eyebrow on-dark">Membership</span>
+    <h1>An ongoing seat at the table.</h1>
+    <p class="lede">Membership with The Quiet Society is a standing relationship, not a transaction. There is no public checkout — every application is reviewed personally, and every member is known by name.</p>
+    <div class="btn-row">
+      <a href="#apply" class="btn btn-gold">Apply for Membership</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow center" style="display:block;text-align:center;">Membership Tiers</span>
+    <h2 class="center" style="max-width:640px;">Three ways to work with us</h2>
+    <p class="lede center" style="max-width:600px;">Every tier includes a dedicated concierge. What changes is scope, availability, and how far ahead we plan together. Final terms are set during your application conversation.</p>
+    <div class="grid grid-3" style="margin-top:48px;">
+      <div class="tier-card">
+        <span class="tier-name">The Essential</span>
+        <span class="tier-fit">For occasional, well-planned requests</span>
+        <ul class="tier-list">
+          <li>Dedicated concierge, business hours</li>
+          <li>Travel &amp; reservation arrangements</li>
+          <li>Standard response within 24 hours</li>
+          <li>Ideal for 1–2 households</li>
+        </ul>
+        <a href="#apply" class="btn btn-outline">Apply</a>
+      </div>
+      <div class="tier-card featured">
+        <span class="tier-name">The Reserve</span>
+        <span class="tier-fit">Our most requested membership</span>
+        <ul class="tier-list">
+          <li>Everything in The Essential</li>
+          <li>Priority access, evenings &amp; weekends</li>
+          <li>Home &amp; property coordination</li>
+          <li>Same-day response, most requests</li>
+        </ul>
+        <a href="#apply" class="btn btn-primary">Apply</a>
+      </div>
+      <div class="tier-card">
+        <span class="tier-name">The Estate</span>
+        <span class="tier-fit">For full households &amp; multiple properties</span>
+        <ul class="tier-list">
+          <li>Everything in The Reserve</li>
+          <li>Multi-property &amp; staffing oversight</li>
+          <li>24-hour availability</li>
+          <li>Quarterly in-person planning</li>
+        </ul>
+        <a href="#apply" class="btn btn-outline">Apply</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section deep" id="apply">
+  <div class="container">
+    <div class="center" style="max-width:640px; margin:0 auto 48px;">
+      <span class="eyebrow">Apply for Membership</span>
+      <h2>Tell us a little about you</h2>
+      <p class="lede center">There's no charge to apply. A member of our team will follow up personally within two business days to arrange a short conversation — payment is only ever discussed once membership is confirmed.</p>
+    </div>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-formspree style="max-width:760px; margin:0 auto;">
+      <input type="hidden" name="_subject" value="New Membership Application — The Quiet Society">
+      <div class="form-grid">
+        <div class="field">
+          <label for="mem-name">Full Name</label>
+          <input type="text" id="mem-name" name="Full Name" required>
+        </div>
+        <div class="field">
+          <label for="mem-email">Email</label>
+          <input type="email" id="mem-email" name="Email" required>
+        </div>
+        <div class="field">
+          <label for="mem-phone">Phone</label>
+          <input type="tel" id="mem-phone" name="Phone" required>
+        </div>
+        <div class="field">
+          <label for="mem-location">Primary Location</label>
+          <input type="text" id="mem-location" name="Primary Location" placeholder="Town, State">
+        </div>
+        <div class="field">
+          <label for="mem-tier">Interested Tier</label>
+          <select id="mem-tier" name="Interested Tier">
+            <option>The Essential</option>
+            <option selected>The Reserve</option>
+            <option>The Estate</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mem-referral">How Did You Hear About Us?</label>
+          <input type="text" id="mem-referral" name="Referral Source">
+        </div>
+        <div class="field full">
+          <label for="mem-notes">What Are You Hoping Membership Will Handle?</label>
+          <textarea id="mem-notes" name="Notes"></textarea>
+        </div>
+        <div class="checkbox-field">
+          <input type="checkbox" id="mem-confidential" required>
+          <label for="mem-confidential">I understand my information is held in strict confidence and used only to evaluate my membership application.</label>
+        </div>
+      </div>
+      <div style="margin-top:28px;">
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+      </div>
+    </form>
+    <div class="form-success" style="max-width:760px; margin:24px auto 0;">Thank you — your application has been received. A member of our team will be in touch within two business days.</div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">The Quiet Society</span>
+        <p style="margin-top:14px; max-width:280px;">A private lifestyle concierge serving Connecticut, the Tri-State area, and New England.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Concierge Services</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Membership</h4>
+        <ul>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="request-concierge.html">Request Concierge</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>concierge@thequietsociety.com</li>
+          <li>Connecticut · Tri-State · New England</li>
+          <li>By appointment &amp; membership</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Quiet Society. All rights reserved.</span>
+      <span>Client information is held in strict confidence.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

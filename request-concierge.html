@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Concierge | The Quiet Society</title>
+<meta name="description" content="Submit a request to The Quiet Society concierge team — travel, home, dining, events, and everyday errands across Connecticut and New England.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-name">The Quiet Society</span>
+      <span class="brand-tagline">PERSONAL CONCIERGE</span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Concierge Services</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="request-concierge.html">Request Concierge</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="member-login.html" class="member-login">Member Login</a>
+      <a href="request-concierge.html" class="btn btn-outline">Request Concierge</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="section tight" style="padding-top:56px;">
+  <div class="container center" style="max-width:640px;">
+    <span class="eyebrow">Request Concierge</span>
+    <h1>Tell us what you need.</h1>
+    <p class="lede center">This goes directly to our concierge team. You don't need to be a member to submit a one-off request — membership simply gives you priority handling and a concierge who already knows you.</p>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="container">
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-formspree style="max-width:760px; margin:0 auto;">
+      <input type="hidden" name="_subject" value="New Concierge Request — The Quiet Society">
+      <div class="form-grid">
+        <div class="field">
+          <label for="req-name">Full Name</label>
+          <input type="text" id="req-name" name="Full Name" required>
+        </div>
+        <div class="field">
+          <label for="req-email">Email</label>
+          <input type="email" id="req-email" name="Email" required>
+        </div>
+        <div class="field">
+          <label for="req-phone">Phone</label>
+          <input type="tel" id="req-phone" name="Phone" required>
+        </div>
+        <div class="field">
+          <label for="req-member">Are You a Member?</label>
+          <select id="req-member" name="Membership Status">
+            <option>Yes — current member</option>
+            <option selected>No — one-off request</option>
+            <option>Interested in applying</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="req-type">Type of Request</label>
+          <select id="req-type" name="Request Type">
+            <option>Travel &amp; Itinerary</option>
+            <option>Home &amp; Property</option>
+            <option>Dining &amp; Reservations</option>
+            <option>Events &amp; Celebrations</option>
+            <option>Wellness &amp; Personal Care</option>
+            <option>Errands &amp; Everyday Life</option>
+            <option>Something Else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="req-date">Needed By</label>
+          <input type="date" id="req-date" name="Needed By">
+        </div>
+        <div class="field full">
+          <label for="req-details">Details</label>
+          <textarea id="req-details" name="Details" placeholder="Tell us as much or as little as you'd like — we'll follow up with any questions." required></textarea>
+        </div>
+        <div class="field">
+          <label for="req-contact">Preferred Contact Method</label>
+          <select id="req-contact" name="Preferred Contact">
+            <option>Email</option>
+            <option>Phone</option>
+            <option>Text</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="req-urgency">Urgency</label>
+          <select id="req-urgency" name="Urgency">
+            <option>Standard</option>
+            <option>Time-sensitive</option>
+            <option>Urgent</option>
+          </select>
+        </div>
+      </div>
+      <div style="margin-top:28px;">
+        <button type="submit" class="btn btn-primary">Send Request</button>
+      </div>
+    </form>
+    <div class="form-success" style="max-width:760px; margin:24px auto 0;">Thank you — your request has been received. Your concierge team will follow up shortly.</div>
+  </div>
+</section>
+
+<section class="section deep center" style="max-width:640px; margin:0 auto;">
+  <span class="eyebrow">Prefer an Ongoing Relationship?</span>
+  <h2>Membership gives every request priority handling.</h2>
+  <a href="membership.html" class="btn btn-gold">Apply for Membership</a>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">The Quiet Society</span>
+        <p style="margin-top:14px; max-width:280px;">A private lifestyle concierge serving Connecticut, the Tri-State area, and New England.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Concierge Services</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Membership</h4>
+        <ul>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="request-concierge.html">Request Concierge</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>concierge@thequietsociety.com</li>
+          <li>Connecticut · Tri-State · New England</li>
+          <li>By appointment &amp; membership</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Quiet Society. All rights reserved.</span>
+      <span>Client information is held in strict confidence.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
