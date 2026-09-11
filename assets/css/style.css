@@ -128,11 +128,12 @@ p{ margin: 0 0 1.2em; color: var(--slate-soft); }
 .header-inner{
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 18px var(--gutter);
+  padding: 10px var(--gutter);
   display:flex; align-items:center; justify-content:space-between;
   gap: 24px;
 }
-.brand{ display:flex; flex-direction:column; line-height:1.1; }
+.brand{ display:flex; align-items:center; }
+.brand-logo{ height: 62px; width:auto; display:block; }
 .brand-name{
   font-family: var(--font-display);
   font-size: 1.55rem;
